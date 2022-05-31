@@ -92,9 +92,13 @@ x.attack()
 # print(universe[int(input('인덱스입력:'))-1])
 
 # 14. 3의 배수인가요?
-a = int(input('숫자 입력 : '))
+# a = int(input('숫자 입력 : '))
 
-if a % 3 == 0 :
-    print('짝')
-else :
-    print(a)
+# if a % 3 == 0 :
+#     print('짝')
+# else :
+#     print(a)
+    
+# 15. 자기소개
+b = input('이름입력 : ')
+print(f'안녕하세요. 저는 {b}입니다.')
