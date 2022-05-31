@@ -10,3 +10,8 @@ nums1 = [100, 200, 300, 400, 500]
 nums1.pop()
 nums1.pop()
 print(nums1)
+
+# 2. 리스트의 내장함수
+l = [200, 100, 300]
+l.insert(2, 10000)
+print(l)
