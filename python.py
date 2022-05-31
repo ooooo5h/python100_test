@@ -54,6 +54,18 @@ print(hour, minute, second, sep=':')
 # sep='?' : 값 사이에 공백이 아닌 문자를 넣고 싶을 때 사용한다.
 
 # 10. 별찍기
-n = int(input())
+# n = int(input())
 for i in range(1, n+1) :
     print(' '*(n-i) + '*'*(2*i-1))
+    
+# 11. for를 이용한 기본 활용
+s = 0
+
+for i in range(1, 101) :
+    s += i
+
+print(s)
+
+# 정답코드
+# for i in range(101):
+#     s+=i
