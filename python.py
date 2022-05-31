@@ -86,3 +86,7 @@ class Wizard :
 x = Wizard(health = 545, mana = 210, armor = 10)
 print(x.health, x.mana, x.armor)
 x.attack()
+
+# 13. 몇번째 행성인가요?
+universe = ['수성', '금성', '지구', '화성', '목성', '토성', '천왕성', '해왕성']
+print(universe[int(input('인덱스입력:'))-1])
