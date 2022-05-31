@@ -122,5 +122,12 @@ print(b[::-1])
 # print(int(sum(scores)/len(scores)))
 
 # 19. 제곱을 구하자
-nums = list(map(int, input('두수입력 : ').split(' ')))
-print(nums[0]**nums[1])
+# nums = list(map(int, input('두수입력 : ').split(' ')))
+# print(nums[0]**nums[1])
+
+# 20. 몫과 나머지
+nums2 = list(map(int, input().split()))
+몫 = nums2[0] // nums2[1]
+나머지 = nums2[0] % nums2[1]
+
+print(몫, 나머지)
