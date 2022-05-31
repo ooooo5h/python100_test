@@ -1,5 +1,8 @@
 # 1. 리스트의 삭제
 # 내가 푼 풀이
+from audioop import reverse
+
+
 nums = [100, 200, 300, 400, 500]
 nums.remove(400)
 nums.remove(500)
@@ -100,5 +103,9 @@ x.attack()
 #     print(a)
     
 # 15. 자기소개
-b = input('이름입력 : ')
-print(f'안녕하세요. 저는 {b}입니다.')
+# b = input('이름입력 : ')
+# print(f'안녕하세요. 저는 {b}입니다.')
+
+# 16. 로꾸거
+b = '안녕하세요'
+print(b[::-1])
