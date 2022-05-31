@@ -111,8 +111,12 @@ b = '안녕하세요'
 print(b[::-1])
 
 # 17. 놀이기구 키제한
-c = int(input('키 입력 : '))
-if c >= 150 :
-    print('YES')
-else :
-    print('NO')
+# c = int(input('키 입력 : '))
+# if c >= 150 :
+#     print('YES')
+# else :
+#     print('NO')
+    
+# 18. 평균 점수
+scores = list(map(int, input('점수입력 : ').split(' ')))
+print(int(sum(scores)/len(scores)))
