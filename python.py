@@ -88,5 +88,13 @@ print(x.health, x.mana, x.armor)
 x.attack()
 
 # 13. 몇번째 행성인가요?
-universe = ['수성', '금성', '지구', '화성', '목성', '토성', '천왕성', '해왕성']
-print(universe[int(input('인덱스입력:'))-1])
+# universe = ['수성', '금성', '지구', '화성', '목성', '토성', '천왕성', '해왕성']
+# print(universe[int(input('인덱스입력:'))-1])
+
+# 14. 3의 배수인가요?
+a = int(input('숫자 입력 : '))
+
+if a % 3 == 0 :
+    print('짝')
+else :
+    print(a)
