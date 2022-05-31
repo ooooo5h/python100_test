@@ -69,3 +69,20 @@ print(s)
 # 정답코드
 # for i in range(101):
 #     s+=i
+
+# 12. 게임 캐릭터 클래스 만들기
+class Wizard :
+    # 속성 생성
+    def __init__(self, health, mana, armor):
+        self.health = health
+        self.mana = mana
+        self.armor = armor
+        
+    # 메소드 생성
+    def attack(self):
+        print('파이어볼')
+
+
+x = Wizard(health = 545, mana = 210, armor = 10)
+print(x.health, x.mana, x.armor)
+x.attack()
