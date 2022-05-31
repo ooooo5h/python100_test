@@ -21,12 +21,12 @@ print(l)
 # 4. 변수의 타입2 => 정답 3번. 출력값이 str.
 
 # 5. for문 계산
-a = 10
+n = 10
 b = 2
 for i in range(1, 5, 2):  # (1,3)
-    a += i   # i가 1일때 a = 10 + 1 = 11.
+    n += i   # i가 1일때 a = 10 + 1 = 11.
     # i가 3일때 a = 11 + 3 = 14.
-print(a+b)   # 14 + 2 = 16. 정답 4번
+print(n+b)   # 14 + 2 = 16. 정답 4번
 
 # 6. false => 2
 # 7. 변수명 => 4,5  땡!!!! _age는 가능하다.
@@ -52,3 +52,8 @@ print(year, month, day, sep='/', end=' ')
 print(hour, minute, second, sep=':')
 
 # sep='?' : 값 사이에 공백이 아닌 문자를 넣고 싶을 때 사용한다.
+
+# 10. 별찍기
+n = int(input())
+for i in range(1, n+1) :
+    print(' '*(n-i) + '*'*(2*i-1))
