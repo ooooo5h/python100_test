@@ -118,5 +118,9 @@ print(b[::-1])
 #     print('NO')
     
 # 18. 평균 점수
-scores = list(map(int, input('점수입력 : ').split(' ')))
-print(int(sum(scores)/len(scores)))
+# scores = list(map(int, input('점수입력 : ').split(' ')))
+# print(int(sum(scores)/len(scores)))
+
+# 19. 제곱을 구하자
+nums = list(map(int, input('두수입력 : ').split(' ')))
+print(nums[0]**nums[1])
