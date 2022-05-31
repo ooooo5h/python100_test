@@ -109,3 +109,10 @@ x.attack()
 # 16. 로꾸거
 b = '안녕하세요'
 print(b[::-1])
+
+# 17. 놀이기구 키제한
+c = int(input('키 입력 : '))
+if c >= 150 :
+    print('YES')
+else :
+    print('NO')
