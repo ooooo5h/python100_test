@@ -58,13 +58,13 @@ print(hour, minute, second, sep=':')
 
 # 10. 별찍기
 # n = int(input())
-for i in range(1, n+1) :
+for i in range(1, n+1):
     print(' '*(n-i) + '*'*(2*i-1))
-    
+
 # 11. for를 이용한 기본 활용
 s = 0
 
-for i in range(1, 101) :
+for i in range(1, 101):
     s += i
 
 print(s)
@@ -74,19 +74,21 @@ print(s)
 #     s+=i
 
 # 12. 게임 캐릭터 클래스 만들기
-class Wizard :
+
+
+class Wizard:
     # 속성 생성
     def __init__(self, health, mana, armor):
         self.health = health
         self.mana = mana
         self.armor = armor
-        
+
     # 메소드 생성
     def attack(self):
         print('파이어볼')
 
 
-x = Wizard(health = 545, mana = 210, armor = 10)
+x = Wizard(health=545, mana=210, armor=10)
 print(x.health, x.mana, x.armor)
 x.attack()
 
@@ -101,7 +103,7 @@ x.attack()
 #     print('짝')
 # else :
 #     print(a)
-    
+
 # 15. 자기소개
 # b = input('이름입력 : ')
 # print(f'안녕하세요. 저는 {b}입니다.')
@@ -116,7 +118,7 @@ print(b[::-1])
 #     print('YES')
 # else :
 #     print('NO')
-    
+
 # 18. 평균 점수
 # scores = list(map(int, input('점수입력 : ').split(' ')))
 # print(int(sum(scores)/len(scores)))
@@ -136,10 +138,10 @@ print(b[::-1])
 # x = set('python')
 # print(x)  => set 선언하는 방법. 출력값은 {'o', 'h', 'n', 't', 'y', 'p'}
 # 1. fruits = {'strawberry', 'grape', 'orange', 'pineapple', 'cherry'}
-# 2.  a = set('apple')  
+# 2.  a = set('apple')
 # 3.  c = set()
 # 아닌 경우 =>  c = {}
-# print(type(c))   => dict형으로 나온다. 
+# print(type(c))   => dict형으로 나온다.
 
 # 22. 배수인지 확인하기 => 2번.
 # 23. OX문제 => 5.0이다.
@@ -154,10 +156,10 @@ print(b[::-1])
 
 # a = int(input())
 # print(circle_area(a))
-    
+
 # 26. 행성문제2
 # planets = {
-#     '수성' : 'Mercury', 
+#     '수성' : 'Mercury',
 #     '금성' : 'Venus',
 #     '지구' : 'Earth',
 #     '화성' : 'Mars',
@@ -171,14 +173,14 @@ print(b[::-1])
 
 # 27. 딕셔너리 만들기
 # 내가 푼 풀이
-names = input('이름 : ').split(' ')
-scores = input('수학점수 :').split(' ')
+# names = input('이름 : ').split(' ')
+# scores = input('수학점수 :').split(' ')
 
-dic = {}
-for i in range(len(names)) :
-    dic[names[i]] = int(scores[i])
+# dic = {}
+# for i in range(len(names)) :
+#     dic[names[i]] = int(scores[i])
 
-print(dic)
+# print(dic)
 
 # 정답 풀이
 # keys = input().split()
@@ -188,3 +190,9 @@ print(dic)
 # print(result)
 
 # d = dict(zip(['a,b,c'], [1,2,3]))  # 키는 키끼리, 값은 값끼리 묶어서 zip함수에 전달해서 딕셔너리를 생성한다.
+
+# 28. 2-gram
+s = input()
+
+for i in range(len(s)-1):   # 마지막 for문은 돌면 범위에서 벗어났다고 에러발생.
+    print(s[i] + s[i+1])
