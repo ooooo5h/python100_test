@@ -204,7 +204,7 @@ print(b[::-1])
 #     print('YES')
 # else :
 #     print('NO')
-    
+
 # long_s = input('알파벳여러개입력 : ')
 
 # result = ''
@@ -214,7 +214,7 @@ print(b[::-1])
 #         result += long_s[i]
 
 # print(result)
-        
+
 # 30. 문자열 속 문자찾기
 # strings = input('문자열 입력 : ')
 # word = input('단어 입력 : ')
@@ -227,5 +227,14 @@ print(b[::-1])
 # 31. 파이썬 자료형의 복잡도 -> (3) 찍음
 
 # 32. 문자열 만들기
-s = input().split()
-print(len(s))
+# s = input().split()
+# print(len(s))
+
+# 33. 거꾸로 출력하기
+numbers = list(map(int, input().split()))
+numbers.reverse()
+print(numbers)
+
+# list.reverse() 는 아무값도 반환하지 않고 list값의 순서를 뒤바꿈
+# reversed(list)는 순서가 뒤집힌 list를 반환함
+# reversed(list)의 반환형은 list가 아니므로 list(reversed(list))로 감싸 형변환을 해야함
