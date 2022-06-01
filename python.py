@@ -149,9 +149,22 @@ print(b[::-1])
 # print(a)
 
 # 25. 원의 넓이 구하기
-def circle_area(r) :
-    return r*r*3.14
+# def circle_area(r) :
+#     return r*r*3.14
 
-a = int(input())
-print(circle_area(a))
+# a = int(input())
+# print(circle_area(a))
     
+# 26. 행성문제2
+planets = {
+    '수성' : 'Mercury', 
+    '금성' : 'Venus',
+    '지구' : 'Earth',
+    '화성' : 'Mars',
+    '목성' : 'Jupiter',
+    '토성' : 'Saturn',
+    '천왕성' : 'Uranus',
+    '해왕성' : 'Neptune',
+    }
+
+print(planets[input()])
