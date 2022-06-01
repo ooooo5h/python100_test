@@ -156,15 +156,35 @@ print(b[::-1])
 # print(circle_area(a))
     
 # 26. 행성문제2
-planets = {
-    '수성' : 'Mercury', 
-    '금성' : 'Venus',
-    '지구' : 'Earth',
-    '화성' : 'Mars',
-    '목성' : 'Jupiter',
-    '토성' : 'Saturn',
-    '천왕성' : 'Uranus',
-    '해왕성' : 'Neptune',
-    }
+# planets = {
+#     '수성' : 'Mercury', 
+#     '금성' : 'Venus',
+#     '지구' : 'Earth',
+#     '화성' : 'Mars',
+#     '목성' : 'Jupiter',
+#     '토성' : 'Saturn',
+#     '천왕성' : 'Uranus',
+#     '해왕성' : 'Neptune',
+#     }
 
-print(planets[input()])
+# print(planets[input()])
+
+# 27. 딕셔너리 만들기
+# 내가 푼 풀이
+names = input('이름 : ').split(' ')
+scores = input('수학점수 :').split(' ')
+
+dic = {}
+for i in range(len(names)) :
+    dic[names[i]] = int(scores[i])
+
+print(dic)
+
+# 정답 풀이
+# keys = input().split()
+# values = map(int, input().split())
+
+# result = dict(zip(keys, values))
+# print(result)
+
+# d = dict(zip(['a,b,c'], [1,2,3]))  # 키는 키끼리, 값은 값끼리 묶어서 zip함수에 전달해서 딕셔너리를 생성한다.
