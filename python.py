@@ -126,8 +126,17 @@ print(b[::-1])
 # print(nums[0]**nums[1])
 
 # 20. 몫과 나머지
-nums2 = list(map(int, input().split()))
-몫 = nums2[0] // nums2[1]
-나머지 = nums2[0] % nums2[1]
+# nums2 = list(map(int, input().split()))
+# 몫 = nums2[0] // nums2[1]
+# 나머지 = nums2[0] % nums2[1]
 
-print(몫, 나머지)
+# print(몫, 나머지)
+
+# 21. set은 어떻게 만드나요? => 3번. : 틀림 정답은 x={} => 딕셔너리임.
+x = set('python')
+# print(x)  => set 선언하는 방법. 출력값은 {'o', 'h', 'n', 't', 'y', 'p'}
+# 1. fruits = {'strawberry', 'grape', 'orange', 'pineapple', 'cherry'}
+# 2.  a = set('apple')  
+# 3.  c = set()
+# 아닌 경우 =>  c = {}
+# print(type(c))   => dict형으로 나온다. 
