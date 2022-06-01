@@ -145,5 +145,13 @@ print(b[::-1])
 # 23. OX문제 => 5.0이다.
 
 # 24. 대문자로 바꿔주세요.
-a = input().upper()
-print(a)
+# a = input().upper()
+# print(a)
+
+# 25. 원의 넓이 구하기
+def circle_area(r) :
+    return r*r*3.14
+
+a = int(input())
+print(circle_area(a))
+    
