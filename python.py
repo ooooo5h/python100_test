@@ -198,20 +198,28 @@ print(b[::-1])
 #     print(s[i] + s[i+1])
 
 # 29. 대문자만 지나가세요
-s = input('알파벳 입력 : ')
+# s = input('알파벳 입력 : ')
 
-if s == s.upper():
-    print('YES')
-else :
-    print('NO')
+# if s == s.upper():
+#     print('YES')
+# else :
+#     print('NO')
     
-long_s = input('알파벳여러개입력 : ')
+# long_s = input('알파벳여러개입력 : ')
 
-result = ''
+# result = ''
 
-for i in range(len(long_s)):
-    if long_s[i] == long_s[i].upper():
-        result += long_s[i]
+# for i in range(len(long_s)):
+#     if long_s[i] == long_s[i].upper():
+#         result += long_s[i]
 
-print(result)
+# print(result)
         
+# 30. 문자열 속 문자찾기
+strings = input('문자열 입력 : ')
+word = input('단어 입력 : ')
+
+print(strings.find(word))
+
+# 문자열.index('찾을문자') => 문자의 시작 위치 반환
+# 문자열.find('찾을문자') => 문자의 시작 위치 반환. 찾지못하면 -1 리턴
