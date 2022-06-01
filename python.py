@@ -216,12 +216,16 @@ print(b[::-1])
 # print(result)
         
 # 30. 문자열 속 문자찾기
-strings = input('문자열 입력 : ')
-word = input('단어 입력 : ')
+# strings = input('문자열 입력 : ')
+# word = input('단어 입력 : ')
 
-print(strings.find(word))
+# print(strings.find(word))
 
 # 문자열.index('찾을문자') => 문자의 시작 위치 반환
 # 문자열.find('찾을문자') => 문자의 시작 위치 반환. 찾지못하면 -1 리턴
 
 # 31. 파이썬 자료형의 복잡도 -> (3) 찍음
+
+# 32. 문자열 만들기
+s = input().split()
+print(len(s))
