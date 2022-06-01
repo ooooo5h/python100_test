@@ -192,7 +192,26 @@ print(b[::-1])
 # d = dict(zip(['a,b,c'], [1,2,3]))  # 키는 키끼리, 값은 값끼리 묶어서 zip함수에 전달해서 딕셔너리를 생성한다.
 
 # 28. 2-gram
-s = input()
+# s = input()
 
-for i in range(len(s)-1):   # 마지막 for문은 돌면 범위에서 벗어났다고 에러발생.
-    print(s[i] + s[i+1])
+# for i in range(len(s)-1):   # 마지막 for문은 돌면 범위에서 벗어났다고 에러발생.
+#     print(s[i] + s[i+1])
+
+# 29. 대문자만 지나가세요
+s = input('알파벳 입력 : ')
+
+if s == s.upper():
+    print('YES')
+else :
+    print('NO')
+    
+long_s = input('알파벳여러개입력 : ')
+
+result = ''
+
+for i in range(len(long_s)):
+    if long_s[i] == long_s[i].upper():
+        result += long_s[i]
+
+print(result)
+        
