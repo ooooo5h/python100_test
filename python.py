@@ -1,10 +1,5 @@
 # 1. 리스트의 삭제
 # 내가 푼 풀이
-from itertools import count
-import math
-from audioop import reverse
-from cmath import sqrt
-
 
 nums = [100, 200, 300, 400, 500]
 nums.remove(400)
@@ -272,15 +267,29 @@ print(b[::-1])
 #     print(num * i, end=' ')
 
 # 37. count 사용하기
-students = list(input().split())
-set_students = set(students)
-dict_answer = {}
+# students = list(input().split())
+# set_students = set(students)
+# dict_answer = {}
 
-for name in set_students:
-    dict_answer[name] = students.count(name)
+# for name in set_students:
+#     dict_answer[name] = students.count(name)
 
-# print(dict_answer)                  # 딕셔너리에서 최대값을 어떻게 출력할꼬
-# print(max(dict_answer.values()))   # max(딕셔너리.values()) : 딕셔너리의 value값들 중 가장 큰 값을 리턴한다.
-print(f'{max(dict_answer, key=dict_answer.get)}(이)가 총 {max(dict_answer.values())}표로 반장이 되었습니다.')
+# # print(dict_answer)                  # 딕셔너리에서 최대값을 어떻게 출력할꼬
+# # print(max(dict_answer.values()))   # max(딕셔너리.values()) : 딕셔너리의 value값들 중 가장 큰 값을 리턴한다.
+# print(f'{max(dict_answer, key=dict_answer.get)}(이)가 총 {max(dict_answer.values())}표로 반장이 되었습니다.')
 
+# 38. 호준이의 아르바이트
+scores = list(map(int, input().split()))
+set_scores = set(scores)  # 중복된 점수 없애기
+count = 0  # 사탕 셀 갯수
+
+for i in range(3):   # 0, 1, 2 => 3위까지만!
+    max_value = max(set_scores)   # 가장 높은 점수
+    # print('최대점수', max_value)
+    count += scores.count(max_value)   # 가장 높은 점수 몇명인지 세=> 다 1등 => count에 추가
+    # print('중간count', count)
+    set_scores.remove(max_value)  # 중복된 값을 제거해줘야 다음 for문에 두번째 높은 숫자를 체크할 수 있음.
+    # print(set_scores)   
+    
+print('정답count', count)
 
