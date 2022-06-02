@@ -250,16 +250,22 @@ print(b[::-1])
 #     print('NO')
 
 # 35. Factory 함수 이용하기
-def one(n):
-    def two(num):
-        result = n ** num
-        return result
-    return two
+# def one(n):
+#     def two(num):
+#         result = n ** num
+#         return result
+#     return two
 
 
-a = one(2)
-b = one(3)
-c = one(4)
-print(a(10))
-print(b(10))
-print(c(10))
+# a = one(2)
+# b = one(3)
+# c = one(4)
+# print(a(10))
+# print(b(10))
+# print(c(10))
+
+# 36. 구구단
+num = int(input('숫자 입력 : '))
+
+for i in range(1, 10) :
+    print(num * i, end=' ')
