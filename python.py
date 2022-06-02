@@ -294,6 +294,28 @@ print(b[::-1])
 # print('정답count', count)
 
 # 39. 오타 수정하기
-words = input('문자 입력 : ')
-print(words.replace('q', 'e').replace('b', 'n'))
+# words = input('문자 입력 : ')
+# print(words.replace('q', 'e').replace('b', 'n'))
         
+# 40. 놀이동산에 가자
+limit_weight = int(input())
+n = int(input())
+friends_weights = []
+
+for _ in range(n):
+    friends_weights.append(int(input()))
+
+count = 0
+total_weight = 0     # 사람들 무게를 더해가면서, limit를 초과했나 체크할거임
+
+for i in range(len(friends_weights)) :
+    total_weight += friends_weights[i]   # 맨 앞의 사람 태우기
+    
+    if total_weight > limit_weight :
+        break
+    
+    count += 1
+
+print(count)
+    
+    
