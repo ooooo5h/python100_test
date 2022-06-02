@@ -1,5 +1,6 @@
 # 1. 리스트의 삭제
 # 내가 푼 풀이
+from itertools import count
 import math
 from audioop import reverse
 from cmath import sqrt
@@ -265,7 +266,21 @@ print(b[::-1])
 # print(c(10))
 
 # 36. 구구단
-num = int(input('숫자 입력 : '))
+# num = int(input('숫자 입력 : '))
 
-for i in range(1, 10) :
-    print(num * i, end=' ')
+# for i in range(1, 10) :
+#     print(num * i, end=' ')
+
+# 37. count 사용하기
+students = list(input().split())
+set_students = set(students)
+dict_answer = {}
+
+for name in set_students:
+    dict_answer[name] = students.count(name)
+
+# print(dict_answer)                  # 딕셔너리에서 최대값을 어떻게 출력할꼬
+# print(max(dict_answer.values()))   # max(딕셔너리.values()) : 딕셔너리의 value값들 중 가장 큰 값을 리턴한다.
+print(f'{max(dict_answer, key=dict_answer.get)}(이)가 총 {max(dict_answer.values())}표로 반장이 되었습니다.')
+
+
