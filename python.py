@@ -1,6 +1,8 @@
 # 1. 리스트의 삭제
 # 내가 푼 풀이
+import math
 from audioop import reverse
+from cmath import sqrt
 
 
 nums = [100, 200, 300, 400, 500]
@@ -240,10 +242,24 @@ print(b[::-1])
 # reversed(list)의 반환형은 list가 아니므로 list(reversed(list))로 감싸 형변환을 해야함
 
 # 34. sort 확인하기
-heights = list(map(int, input('키 입력 : ').split()))
+# heights = list(map(int, input('키 입력 : ').split()))
 
-if heights[0] == min(heights) :
-    print('YES')
-else :
-    print('NO')
-    
+# if heights[0] == min(heights) :
+#     print('YES')
+# else :
+#     print('NO')
+
+# 35. Factory 함수 이용하기
+def one(n):
+    def two(num):
+        result = n ** num
+        return result
+    return two
+
+
+a = one(2)
+b = one(3)
+c = one(4)
+print(a(10))
+print(b(10))
+print(c(10))
