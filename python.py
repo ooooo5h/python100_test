@@ -231,10 +231,19 @@ print(b[::-1])
 # print(len(s))
 
 # 33. 거꾸로 출력하기
-numbers = list(map(int, input().split()))
-numbers.reverse()
-print(numbers)
+# numbers = list(map(int, input().split()))
+# numbers.reverse()
+# print(numbers)
 
 # list.reverse() 는 아무값도 반환하지 않고 list값의 순서를 뒤바꿈
 # reversed(list)는 순서가 뒤집힌 list를 반환함
 # reversed(list)의 반환형은 list가 아니므로 list(reversed(list))로 감싸 형변환을 해야함
+
+# 34. sort 확인하기
+heights = list(map(int, input('키 입력 : ').split()))
+
+if heights[0] == min(heights) :
+    print('YES')
+else :
+    print('NO')
+    
