@@ -279,17 +279,21 @@ print(b[::-1])
 # print(f'{max(dict_answer, key=dict_answer.get)}(이)가 총 {max(dict_answer.values())}표로 반장이 되었습니다.')
 
 # 38. 호준이의 아르바이트
-scores = list(map(int, input().split()))
-set_scores = set(scores)  # 중복된 점수 없애기
-count = 0  # 사탕 셀 갯수
+# scores = list(map(int, input().split()))
+# set_scores = set(scores)  # 중복된 점수 없애기
+# count = 0  # 사탕 셀 갯수
 
-for i in range(3):   # 0, 1, 2 => 3위까지만!
-    max_value = max(set_scores)   # 가장 높은 점수
-    # print('최대점수', max_value)
-    count += scores.count(max_value)   # 가장 높은 점수 몇명인지 세=> 다 1등 => count에 추가
-    # print('중간count', count)
-    set_scores.remove(max_value)  # 중복된 값을 제거해줘야 다음 for문에 두번째 높은 숫자를 체크할 수 있음.
-    # print(set_scores)   
+# for i in range(3):   # 0, 1, 2 => 3위까지만!
+#     max_value = max(set_scores)   # 가장 높은 점수
+#     # print('최대점수', max_value)
+#     count += scores.count(max_value)   # 가장 높은 점수 몇명인지 세=> 다 1등 => count에 추가
+#     # print('중간count', count)
+#     set_scores.remove(max_value)  # 중복된 값을 제거해줘야 다음 for문에 두번째 높은 숫자를 체크할 수 있음.
+#     # print(set_scores)   
     
-print('정답count', count)
+# print('정답count', count)
 
+# 39. 오타 수정하기
+words = input('문자 입력 : ')
+print(words.replace('q', 'e').replace('b', 'n'))
+        
