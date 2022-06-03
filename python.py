@@ -1,6 +1,7 @@
 # 1. 리스트의 삭제
 # 내가 푼 풀이
 
+import datetime
 nums = [100, 200, 300, 400, 500]
 nums.remove(400)
 nums.remove(500)
@@ -289,14 +290,14 @@ print(b[::-1])
 #     count += scores.count(max_value)   # 가장 높은 점수 몇명인지 세=> 다 1등 => count에 추가
 #     # print('중간count', count)
 #     set_scores.remove(max_value)  # 중복된 값을 제거해줘야 다음 for문에 두번째 높은 숫자를 체크할 수 있음.
-#     # print(set_scores)   
-    
+#     # print(set_scores)
+
 # print('정답count', count)
 
 # 39. 오타 수정하기
 # words = input('문자 입력 : ')
 # print(words.replace('q', 'e').replace('b', 'n'))
-        
+
 # 40. 놀이동산에 가자
 # limit_weight = int(input())
 # n = int(input())
@@ -310,25 +311,34 @@ print(b[::-1])
 
 # for i in range(len(friends_weights)) :
 #     total_weight += friends_weights[i]   # 맨 앞의 사람 태우기
-    
+
 #     if total_weight > limit_weight :
 #         break
-    
+
 #     count += 1
 
 # print(count)
-    
-# 41. 소수판별
-n = int(input())
-cnt = 0   # 나눠떨어지는 갯수를 셀 변수
 
-for i in range(2, n+1):
-    if n % i == 0 :
-        cnt +=1
-    else :
-        continue
-    
-if cnt > 0 or n == 1:
-    print('NO')
-else :
-    print('YES')
+# 41. 소수판별
+# n = int(input())
+# cnt = 0   # 나눠떨어지는 갯수를 셀 변수
+
+# for i in range(2, n+1):
+#     if n % i == 0 :
+#         cnt +=1
+#     else :
+#         continue
+
+# if cnt > 0 or n == 1:
+#     print('NO')
+# else :
+#     print('YES')
+
+# 42. 요일 구하기
+def solution(a, b):
+    print(eng_days[datetime.date(2020, a, b).weekday()])
+
+a, b = map(int, input().split())
+eng_days = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN']
+
+solution(a, b )
