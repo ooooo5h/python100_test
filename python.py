@@ -298,24 +298,37 @@ print(b[::-1])
 # print(words.replace('q', 'e').replace('b', 'n'))
         
 # 40. 놀이동산에 가자
-limit_weight = int(input())
+# limit_weight = int(input())
+# n = int(input())
+# friends_weights = []
+
+# for _ in range(n):
+#     friends_weights.append(int(input()))
+
+# count = 0
+# total_weight = 0     # 사람들 무게를 더해가면서, limit를 초과했나 체크할거임
+
+# for i in range(len(friends_weights)) :
+#     total_weight += friends_weights[i]   # 맨 앞의 사람 태우기
+    
+#     if total_weight > limit_weight :
+#         break
+    
+#     count += 1
+
+# print(count)
+    
+# 41. 소수판별
 n = int(input())
-friends_weights = []
+cnt = 0   # 나눠떨어지는 갯수를 셀 변수
 
-for _ in range(n):
-    friends_weights.append(int(input()))
-
-count = 0
-total_weight = 0     # 사람들 무게를 더해가면서, limit를 초과했나 체크할거임
-
-for i in range(len(friends_weights)) :
-    total_weight += friends_weights[i]   # 맨 앞의 사람 태우기
+for i in range(2, n+1):
+    if n % i == 0 :
+        cnt +=1
+    else :
+        continue
     
-    if total_weight > limit_weight :
-        break
-    
-    count += 1
-
-print(count)
-    
-    
+if cnt > 0 or n == 1:
+    print('NO')
+else :
+    print('YES')
