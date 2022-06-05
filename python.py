@@ -358,12 +358,21 @@ print(b[::-1])
 # print(secondary_num[::-1])
 
 # 44. 각 자리수의 합
-n = int(input())
-sum = 0
+# n = int(input())
+# sum = 0
 
-for i in range(len(str(n))-1):
-    sum += n % 10
-    n = n // 10
+# for i in range(len(str(n))-1):
+#     sum += n % 10
+#     n = n // 10
 
-result = sum + int(str(n)[0])
+# result = sum + int(str(n)[0])
+# print(result)
+
+# 정답 풀이
+n = list(map(int, input()))
+result = 0
+
+for i in n:
+    result += i
+
 print(result)
