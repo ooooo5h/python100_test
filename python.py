@@ -1,6 +1,7 @@
 # 1. 리스트의 삭제
 # 내가 푼 풀이
 
+from audioop import reverse
 import datetime
 nums = [100, 200, 300, 400, 500]
 nums.remove(400)
@@ -335,10 +336,27 @@ print(b[::-1])
 #     print('YES')
 
 # 42. 요일 구하기
-def solution(a, b):
-    print(eng_days[datetime.date(2020, a, b).weekday()])
+# def solution(a, b):
+#     print(eng_days[datetime.date(2020, a, b).weekday()])
 
-a, b = map(int, input().split())
-eng_days = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN']
+# a, b = map(int, input().split())
+# eng_days = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN']
 
-solution(a, b )
+# solution(a, b )
+
+# 43. 10진수를 2진수로
+
+n = int(input())
+secondary_num = ''
+
+while True :
+    secondary_num += str(n % 2)
+    n = n // 2
+    
+    if n == 1 :
+        secondary_num += '1'
+        break
+
+
+print(secondary_num[::-1])
+    
