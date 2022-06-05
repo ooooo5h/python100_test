@@ -398,7 +398,7 @@ print(b[::-1])
 # print(result)
 
 # 47. set자료형의 응용
-# people = [  
+# people = [
 #         ('이호준', '01050442903'),
 #         ('이호상', '01051442904'),
 #         ('이준호', '01050342904'),
@@ -423,5 +423,20 @@ print(b[::-1])
 # print(answer)
 
 # 49. 최댓값 구하기
-num = list(map(int, input().split()))
-print(max(num))
+# num = list(map(int, input().split()))
+# print(max(num))
+
+# 50. 버블정렬 구현하기
+def bubble(data):
+    for i in range(len(data)-1):
+        for j in range(len(data)-1-i):
+            if data[j] > data[j+1]:
+                data[j], data[j+1] = data[j+1], data[j]
+                
+    for i in data:
+        print(i, end=" ")
+
+
+data = list(map(int, input().split()))
+
+bubble(data)
