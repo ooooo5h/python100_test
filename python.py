@@ -1,8 +1,5 @@
 # 1. 리스트의 삭제
 # 내가 푼 풀이
-
-from audioop import reverse
-import datetime
 nums = [100, 200, 300, 400, 500]
 nums.remove(400)
 nums.remove(500)
@@ -346,17 +343,27 @@ print(b[::-1])
 
 # 43. 10진수를 2진수로
 
+# n = int(input())
+# secondary_num = ''
+
+# while True :
+#     secondary_num += str(n % 2)
+#     n = n // 2
+
+#     if n == 1 :
+#         secondary_num += '1'
+#         break
+
+
+# print(secondary_num[::-1])
+
+# 44. 각 자리수의 합
 n = int(input())
-secondary_num = ''
+sum = 0
 
-while True :
-    secondary_num += str(n % 2)
-    n = n // 2
-    
-    if n == 1 :
-        secondary_num += '1'
-        break
+for i in range(len(str(n))-1):
+    sum += n % 10
+    n = n // 10
 
-
-print(secondary_num[::-1])
-    
+result = sum + int(str(n)[0])
+print(result)
