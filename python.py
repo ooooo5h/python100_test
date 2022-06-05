@@ -369,10 +369,17 @@ print(b[::-1])
 # print(result)
 
 # 정답 풀이
-n = list(map(int, input()))
-result = 0
+# n = list(map(int, input()))
+# result = 0
 
-for i in n:
-    result += i
+# for i in n:
+#     result += i
 
-print(result)
+# print(result)
+
+# 45. time함수 이용하기
+import time
+
+now_year =  time.strftime('%Y')
+
+print(now_year)
