@@ -385,14 +385,27 @@ print(b[::-1])
 # print(now_year)
 
 # 46. str자료형의 응용
-number = ''
+# number = ''
 
-for i in range(1, 101):
-    number += str(i)
+# for i in range(1, 101):
+#     number += str(i)
 
-result = 0
+# result = 0
 
-for i in number:
-    result += int(i)
+# for i in number:
+#     result += int(i)
 
-print(result)
+# print(result)
+
+# 47. set자료형의 응용
+people = [  
+        ('이호준', '01050442903'),
+        ('이호상', '01051442904'),
+        ('이준호', '01050342904'),
+        ('이호준', '01050442903'),
+        ('이준', '01050412904'),
+        ('이호', '01050443904'),
+        ('이호준', '01050442903'),]
+
+people = set(people)
+print(len(people))
