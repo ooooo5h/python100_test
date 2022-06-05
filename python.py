@@ -411,13 +411,17 @@ print(b[::-1])
 # print(len(people))
 
 # 48. 대소문자 바꿔서 출력하기
-n = input()
-answer = ''
+# n = input()
+# answer = ''
 
-for i in n :
-    if i.isupper() :
-        answer += i.lower()
-    else :
-        answer += i.upper()
+# for i in n :
+#     if i.isupper() :
+#         answer += i.lower()
+#     else :
+#         answer += i.upper()
 
-print(answer)
+# print(answer)
+
+# 49. 최댓값 구하기
+num = list(map(int, input().split()))
+print(max(num))
