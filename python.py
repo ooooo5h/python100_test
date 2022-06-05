@@ -378,8 +378,21 @@ print(b[::-1])
 # print(result)
 
 # 45. time함수 이용하기
-import time
+# import time
 
-now_year =  time.strftime('%Y')
+# now_year =  time.strftime('%Y')
 
-print(now_year)
+# print(now_year)
+
+# 46. str자료형의 응용
+number = ''
+
+for i in range(1, 101):
+    number += str(i)
+
+result = 0
+
+for i in number:
+    result += int(i)
+
+print(result)
